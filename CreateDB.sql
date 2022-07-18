@@ -1,0 +1,5 @@
+CREATE TABLE `eztechmovies`.`eztm_customer` ( `customer_ID` INT(16) NOT NULL AUTO_INCREMENT, `customer_fname` VARCHAR(20) NOT NULL , `customer_lname` VARCHAR(30) NOT NULL , `customer_email` VARCHAR(80) NOT NULL , `customer_phone` INT(10) NOT NULL , `customer_subID` INT(6) NOT NULL , `customer_sub_status` TEXT NOT NULL , `customer_start_date` DATE NOT NULL , `customer_pmt_method` TEXT NOT NULL , `customer_userID` VARCHAR(16) NOT NULL , `customer_password` VARCHAR(32) NOT NULL , `customer_dob` DATE NOT NULL , PRIMARY KEY (`customer_ID`)) ENGINE = InnoDB;
+
+CREATE TABLE `eztechmovies`.`eztm_subscriptions` ( `sub_ID` INT(6) NOT NULL AUTO_INCREMENT, `sub_type` TEXT NOT NULL , `sub_price` FLOAT(6) NOT NULL , `sub_multi_option` INT(2) NOT NULL , PRIMARY KEY (`sub_ID`(6))) ENGINE = InnoDB;
+
+CREATE TABLE `eztechmovies`.`eztm_movie_data` ( `movie_ID` INT(12) NOT NULL AUTO_INCREMENT, `movie_title` VARCHAR(50) NOT NULL , `movie_cast` VARCHAR(100) NOT NULL , `movie_rating` VARCHAR(6) NOT NULL , `movie_release_date` YEAR(4) NOT NULL , `movie_desc` VARCHAR(250) NOT NULL , `movie_genre` VARCHAR(15) NOT NULL , PRIMARY KEY (`movie_ID`)) ENGINE = InnoDB;
